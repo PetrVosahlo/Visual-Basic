@@ -26,3 +26,17 @@ C:\Users\Dave\Documents\Work Visual Basic\Prvocisla\obj\Debug\CrossIN.vbproj.Cor
 C:\Users\Dave\Documents\Work Visual Basic\Prvocisla\obj\Debug\CrossIN.exe
 C:\Users\Dave\Documents\Work Visual Basic\Prvocisla\obj\Debug\CrossIN.xml
 C:\Users\Dave\Documents\Work Visual Basic\Prvocisla\obj\Debug\CrossIN.pdb
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\bin\Debug\CrossIN.exe.config
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\bin\Debug\CrossIN.exe
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\bin\Debug\CrossIN.pdb
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\bin\Debug\CrossIN.xml
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.vbproj.AssemblyReference.cache
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.vbproj.ResolveComReference.cache
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.frOtveri.resources
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.Resources.resources
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.vbproj.GenerateResource.cache
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.vbproj.CoreCompileInputs.cache
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.exe
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.xml
+C:\Users\Dave\Documents\WorkVisualBasic\Prvocisla\obj\Debug\CrossIN.pdb
