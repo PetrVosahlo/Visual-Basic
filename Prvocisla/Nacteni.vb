@@ -18,7 +18,7 @@ Module Nacteni
         Do
             k += 1
             vychoziBunka = list_1.Cells(1, k)
-        Loop While vychoziBunka.Value = ""
+        Loop While CType(vychoziBunka.Value, String) = ""
         oblast_bunek_1 = vychoziBunka.CurrentRegion
         pocetRadku = oblast_bunek_1.Rows.Count
         For i = 1 To pocetRadku
@@ -29,7 +29,7 @@ Module Nacteni
                 If cislo > 0 Then
                     prvocislo = Primenumbers(cislo)
                     If prvocislo = True Then
-                        text += aktualniBunka.Value + Chr(10)
+                        text += Str(aktualniBunka.Value) + Chr(10)
                     End If
                 End If
             End If
