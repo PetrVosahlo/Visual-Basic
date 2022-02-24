@@ -13,33 +13,36 @@ Module Nacteni
         k = 0
 
         sesit_1 = excelApp.Workbooks.Open(soubor)
-
-        list_1 = sesit_1.Worksheets(1)
-        Do
-            k += 1
-            vychoziBunka = list_1.Cells(1, k)
-        Loop While CType(vychoziBunka.Value, String) = ""
-        oblast_bunek_1 = vychoziBunka.CurrentRegion
-        pocetRadku = oblast_bunek_1.Rows.Count
-        For i = 1 To pocetRadku
-            prvocislo = False
-            aktualniBunka = oblast_bunek_1(i, 1)
-            If Integer.TryParse(aktualniBunka.Value, jeInteger) Then
-                cislo = Integer.Parse(aktualniBunka.Value)
-                If cislo > 0 Then
-                    prvocislo = Primenumbers(cislo)
-                    If prvocislo = True Then
-                        text += Str(aktualniBunka.Value) + Chr(10)
+        Try
+            list_1 = sesit_1.Worksheets(1)
+            Do
+                k += 1
+                vychoziBunka = list_1.Cells(1, k)
+            Loop While CType(vychoziBunka.Value, String) = ""
+            oblast_bunek_1 = vychoziBunka.CurrentRegion
+            pocetRadku = oblast_bunek_1.Rows.Count
+            For i = 1 To pocetRadku
+                prvocislo = False
+                aktualniBunka = oblast_bunek_1(i, 1)
+                If Integer.TryParse(aktualniBunka.Value, jeInteger) Then
+                    cislo = Integer.Parse(aktualniBunka.Value)
+                    If cislo > 0 Then
+                        prvocislo = Primenumbers(cislo)
+                        If prvocislo = True Then
+                            text += Str(aktualniBunka.Value) + Chr(10)
+                        End If
                     End If
                 End If
-            End If
-        Next
+            Next
+            MsgBox(text,, "Prvočísla v souboru jsou:")
+        Catch ex As Exception
+            MsgBox("Chyba nanačítání souboru. Program se zavírá.")
+        Finally
+            sesit_1.Close()
+            excelApp.Quit()
+            excelApp = Nothing
+        End Try
 
-        sesit_1.Close()
-        excelApp.Quit()
-        excelApp = Nothing
-
-        MsgBox(text,, "Prvočísla v souboru jsou:")
 
     End Sub
 End Module
